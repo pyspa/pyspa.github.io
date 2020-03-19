@@ -1,3 +1,50 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+theme = "harbor"
+baseurl = "https://blog.pyspa.org"
+title = "Pyspa Blog"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+
+[Author]
+  name = "Pyspa"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-users fa-lg"
+  url = "/about/"
+  weight = 3
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+[[params.nav]]
+  identifier = "categories"
+  name = "Category"
+  icon = "fas fa-folder-open fa-lg"
+  url = "categories"
+  weight = 3
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
+
+[params.logo]
+  url = "icon.png"
+  width = 50
+  height = 50
+  alt = "Logo"

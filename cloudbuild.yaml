@@ -1,0 +1,6 @@
+steps:
+  - name: gcr.io/cloud-builders/git
+    args: ['clone', '--recurse-submodules', '--depth', '1', 'https://github.com/matsuyoshi30/harbor.git', 'themes/harbor']
+  - name: 'gcr.io/$PROJECT_ID/hugo'
+  - name: 'gcr.io/$PROJECT_ID/firebase'
+    args: ['deploy']

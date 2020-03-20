@@ -1,5 +1,5 @@
 theme = "harbor"
-baseurl = "https://blog.pyspa.org"
+baseurl = "/"
 title = "Pyspa Blog"
 paginate = 3
 languageCode = "en"

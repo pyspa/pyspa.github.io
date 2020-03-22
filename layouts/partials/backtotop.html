@@ -1,0 +1,20 @@
+<script>
+    document.addEventListener('scroll', function() {
+        var bb = document.getElementById('backtotopButton');
+        if(!bb) {
+          return;
+        }
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            bb.style.opacity = "1";
+            bb.style.transition = "0.5s";
+        } else {
+            bb.style.opacity = "0";
+            bb.style.transition = "0.5s";
+        }
+    });
+
+    function topFunction() {
+        document.body.scrollTop = 0;            // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>

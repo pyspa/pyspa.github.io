@@ -1,4 +1,5 @@
 steps:
   - name: gcr.io/cloud-builders/git
     args: ['clone', '--recurse-submodules', '--depth', '1', 'https://github.com/gcushen/hugo-academic.git', 'themes/academic']
-  - name: 'gcr.io/$PROJECT_ID/hugo'
+  - name: klakegg/hugo:ext-debian
+    env: ['HUGO_DESTINATION=/workspace/public']

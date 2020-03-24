@@ -1,8 +1,5 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-f', 'tools/Dockerfile.firebase', '-t', 'gcr.io/$PROJECT_ID/firebase', 'tools' ]
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-f', 'tools/Dockerfile.hugo', '-t', 'gcr.io/$PROJECT_ID/hugo', 'tools' ]
 images:
   - 'gcr.io/$PROJECT_ID/firebase'
-  - 'gcr.io/$PROJECT_ID/hugo'

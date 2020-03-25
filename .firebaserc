@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pyspa-bot"
+    "production": "pyspa-bot",
+    "default": "pyspa-blog-staging"
   }
 }

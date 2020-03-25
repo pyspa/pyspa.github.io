@@ -3,6 +3,6 @@ steps:
     args: ['clone', '--recurse-submodules', '--depth', '1', 'https://github.com/gcushen/hugo-academic.git', 'themes/academic']
   - name: klakegg/hugo:ext-debian
     env: ['HUGO_DESTINATION=/workspace/public']
-    args: ['-b', 'https://blog.pyspa.org/']
+    args: ['-b', $_BASE_URL]
   - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['deploy']
+    args: ['deploy', '--project=${_PROJECT}']

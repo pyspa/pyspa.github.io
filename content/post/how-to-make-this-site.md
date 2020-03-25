@@ -2,6 +2,7 @@
 title: "Pyspaブログを構成する要素技術"
 date: 2020-03-22T13:13:06+09:00
 tags: ["Hugo", "GitHub", "Cloud Build", "Firebase"]
+authors: ["taichi"]
 ---
 
 皆さんはじめまして。Pyspaの方からやってきました太一です。
@@ -43,7 +44,7 @@ tags: ["Hugo", "GitHub", "Cloud Build", "Firebase"]
 
 ざっくり言うと、Pyspaブログは、Markdownでエントリを書いたら、GitHubにPRしてマージされるとCloud Build上でHugoが動いて、その結果をFirebase Hostingにデプロイしています。
 
-{{<figure src="/images/how-to-make-this-site/pyspablog.svg" title="全体構成" >}}
+{{<figure src="/img/how-to-make-this-site/pyspablog.svg" title="全体構成" >}}
 
 このエントリでは、単にマニュアルを読むだけでは分かり辛かったことや、マニュアルには書いてない部分について説明していきます。
 
@@ -170,7 +171,7 @@ Pyspaブログのビルドでは、firebase-toolsとHugoを使いますので、
 
 例えば、Hugoをコンテナイメージ化するにはまずDockerfile.hugoとして以下のような内容のファイルを作ります。
 
-{{<highlight docker>}}
+{{<highlight dockerfile>}}
 FROM busybox AS build-env
 ENV HUGO_VERSION=0.67.1
 RUN wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
@@ -288,13 +289,13 @@ Cloud Buildにおけるアクセス制御としてビルドトリガーの構成
 
 具体的には、PRの画面やproceted branchを構成するGitHubの画面から見えるCloud BuildのビルドトリガーがUUIDのようなおおよそ人間には認識し辛い文字列になっているのです。
 
-{{<figure src="/images/how-to-make-this-site/branch_protection.png" title="Branch protection" >}}
+{{<figure src="/img/how-to-make-this-site/branch_protection.png" title="Branch protection" >}}
 
 PyspaブログではPR時にとりあえずエラーが無い事だけを確認するだけのビルドプロセスと、マージされた後にデプロイするビルドプロセスを定義してあります。
 
 Cloud Build側の画面で確認するとこういう風になっています。
 
-{{<figure src="/images/how-to-make-this-site/build_triggers.png" title="Build Triggers" >}}
+{{<figure src="/img/how-to-make-this-site/build_triggers.png" title="Build Triggers" >}}
 
 問題は、GitHub側に表示されているIDとCloud Build側に表示されている名前を対応付ける方法がCloud BuildのWeb UIによって提供されていないことです。
 

@@ -11,23 +11,10 @@ date: 2021-08-11T12:40:45Z
 lastmod: 2021-08-11T12:40:45Z
 featured: false
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 自宅ではUniFiでネットワークを構築しています。狭い家ですし、VPNも貼ってないしセグメントを分けたりもしてないので、全く無意味で完全に趣味です。
+
+<!--more-->
 
 UniFiネットワークでは、UniFi controllerというソフトウェアを使って設定します。これを常時稼働しておけば外から状態を監視したり、設定したりできるのです。
 

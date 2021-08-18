@@ -1,5 +1,5 @@
 ---
-title: "お題: オススメのSQL本"
+title: "お題: オススメの分析系SQL本"
 subtitle: ""
 summary: ""
 authors: []
@@ -35,6 +35,7 @@ draft: false
 
 - [達人に学ぶSQL徹底指南書 第2版 初級者で終わりたくないあなたへ](https://www.amazon.co.jp/dp/B07GB4CNKP)
 - うんこSQLドリル
+  - (注釈: 現時点では存在しません)
 
 - すでに出てるけど10年本は割とおすすめかな
   - 一般的なSQLなら GROUP BY HAVING までできればだいたいなんでもかけるけど、分析SQLだとウインドウ関数使わないとどうしようもないケースが出てくるので

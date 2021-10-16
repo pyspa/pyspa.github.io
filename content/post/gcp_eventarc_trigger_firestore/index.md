@@ -140,6 +140,8 @@ func recieve(event cloudevents.Event) {
 
 ## 注意1: decode errorが出る
 
+(追記: v0.2.0が出てこの問題は解決しました)
+
 2021年9月現在、普通に実装すると以下のエラーが出ます。
 
 ```
@@ -153,6 +155,8 @@ json: cannot unmarshal string into Go struct field LogEntryData.severity of type
 ```
 
 ## 注意2: RequestやMetadataが空
+
+(追記: v0.2.0が出てこの問題は解決しました)
 
 [このissueで報告](https://github.com/googleapis/google-cloudevents-go/issues/77) していますが、`ProtoPayload` のRequestやMetadataが空になります。これは自動生成されているコードでは `fields` というプロパティが期待されているのに実際にはそうなっていないからです。(issue参照)
 

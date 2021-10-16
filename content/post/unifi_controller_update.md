@@ -16,7 +16,6 @@ draft: false
 
 - Preemptible化
 - Let's Encrypt化
-- UniFiでのコマンド集
 
 # Preemptible化
 

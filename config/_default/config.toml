@@ -74,3 +74,18 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+
+# security configuration
+# see: https://stackoverflow.com/questions/70429317/blogdownserve-site-fails-to-produce-template-site
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_','^WC_']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

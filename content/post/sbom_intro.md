@@ -27,9 +27,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-# SBOMのお話
-
-
 C:
 > OSS管理の国際規格ってどういうことです?
 
@@ -53,36 +50,37 @@ A:
 > pythonメタデータはSPDXはライセンスのshort nameを参照するように推奨しております
 
 B:
-> 今後ありそうな方向としてはOpenchainの標準を取得していない団体のソフトウェアの納品を断るみたいなことになりえます
+> 今後ありそうな方向としてはOpenchainの標準を取得していない団体のソフトウェアの納品を断るみたいなことになりえます。
 > バイデン大統領などがSBOMをサイバーセキュリティ施策のなかの1つとして掲げたりしています。
 > 昨今のサプライチェーン攻撃などを受けての流れですね。
 
 > と、まぁ、つまり使う側がライセンスや発注先、発注元今まで適当にやりすぎたツケを払ってねと言ってるだけでもある
-> GPLだっつてるのに勝手に製品に組み込んだ挙句ソース開示拒否みたいな
-> OSSを公開する側にとってはどちらかというとやりやすくなるはず
+> GPLだっつてるのに勝手に製品に組み込んだ挙句ソース開示拒否みたいな。
+> OSSを公開する側にとってはどちらかというとやりやすくなるはず。
 > だって搾取される可能性がなくなるのだから
 
 A: 
 > まあライセンスさえちゃんとしてればっていうのでいいならこれまででいいのかね
 
 B: 
-> SBOMというのを企業は扱わないといけないのがコストとして今後掛かってきますね
+> SBOMというのを企業は扱わないといけないのがコストとして今後掛かってきますね。
 > その辺の管理ツールはまだまだこれからですが時が解決するでしょう
 
 A: 
 > [deps.dev](https://deps.dev/) もそこらへん意識したものだったんだな
 
 B: 
-> そこらへんのライセンス表記がどこまで信じられるものか？というのが多分大きな企業は気にしているところですね
-> MITって書いてあったけど実は嘘とか、本人気が付いてなかったけど実はGPLのものがあったとか
+> そこらへんのライセンス表記がどこまで信じられるものか？というのが多分大きな企業は気にしているところですね。
+> MITって書いてあったけど実は嘘とか、本人気が付いてなかったけど実はGPLのものがあったとか、
 > OSS公開する側も、そのOSSが利用しているOSSのライセンスとかをちゃんと気にしてねっていう話でしかないんですが
 
 A: 
 > OSSを公開するときはOSSを使ってもいるのだ
 
 B: 
-> あとはライセンスの表記を適当にするのを辞めるのだ
-> ということくらいです
+> あとはライセンスの表記を適当にするのを辞めるのだ。
+> ということくらいです。
+> 
 > BSDと一言だけ書いてるみたいなｗ
 > 義務とかちゃんと守るのだみたいな
 
@@ -99,9 +97,9 @@ C:
 > つまりOSS開発者の99%ぐらいは現時点では従っていない国際規格なのね。
 
 B: 
-> いや
-> Linux Kernelが従っているのでSPDXの表記は
-> なので活動自体は支持されている
+> いや、
+> Linux Kernelが従っているのでSPDXの表記は。
+> なので活動自体は支持されている。
 > SBOMという製品の部品表みたいなのは産業界の要請で出てきているから、これから普及するというかTOYOTAなりが担いでるし事実上のデファクトでもある
 
 A: 
@@ -109,8 +107,8 @@ A:
 > peps.python.orgpeps.python.org
 > PEP 639 – Improving License Clarity with Better Package Metadata | peps.python.org
 > Python Enhancement Proposals (PEPs)
-> PythonではSPDXの名前を尊重せぇという話になりました
-> あ、よく見たらこのPEPは新しいやつだ
+> PythonではSPDXの名前を尊重せぇという話になりました。
+> あ、よく見たらこのPEPは新しいやつだ。
 > まあpythonパッケージングでもSPDX表記への対応が進んでいますよ
 
 A: 
@@ -123,7 +121,7 @@ A:
 > じゃあこの話題はSBOMと絡めて話すべきことなんだな。ふむふむ。
 
 C:
-> とはいえ、デジュールじゃんというのは間違いないと思う
+> とはいえ、デジュールじゃんというのは間違いないと思う。
 > 現在進行形でnpm moduleの何割が従ってるのよって言う
 
 B: 
@@ -145,8 +143,9 @@ A:
 > プレゼンス悪いよ
 
 B: 
-> SPDX identifier => ライセンスの表記統一しようぜ
-> SPDX/ SPDX Lite => SBOMの規格統一しようぜ
+> - SPDX identifier => ライセンスの表記統一しようぜ
+> - SPDX/ SPDX Lite => SBOMの規格統一しようぜ
+>
 > 前者のidentifierは従ってくれたらうれしいというやつで、守ってないとかいうのが普通の状態。
 
 A: 
@@ -157,7 +156,7 @@ B:
 
 A: 
 > https://spdx.dev/specifications/
-> 2.2やでもう
+> 2.2やでもう。
 > SBOMは基準とかそういうので、それを満たすのはまずSPDXでリファレンスしてんぜっていうことかな
 
 B: 
@@ -165,7 +164,7 @@ B:
 > - ソフトウェアの名前とかバージョンなどを一位に定めるもの
 > - ライセンス
 > - 依存関係
-> の集合体なんですよね
+> の集合体なんですよね。
 > この中をどう埋めるか、何で埋めるか？というのはまだ確定できていない
 
 A: 
@@ -182,14 +181,14 @@ A:
 > ちゃんとライセンス書く
 
 B: 
-> ライセンスをちゃんと書く。以上
+> ライセンスをちゃんと書く。以上。
 > ライセンス違反をしない
 
 C:
 > 特定のフォーマットに従って依存OSSを列挙するとかは要らない？
 
 B: 
-> 全然関係ないです
+> 全然関係ないです。
 > それをやる必要があるのは製品を市場に流通させる責任を持つ人
 
 A: 
@@ -211,7 +210,7 @@ A:
 > なのでOSS公開する人としてはこれまでちゃんとしてるならそのままですよねと
 
 C:
-> とあるOSSは全行僕が手書きしました
+> とあるOSSは全行僕が手書きしました。
 > ライセンスはApache2.0のはず。依存はOpenSSLのみ。
 
 B:
@@ -233,7 +232,7 @@ C:
 > 抜けがあったか
 
 B:
-> なので、このライブラリを採用する場合は、作者に確認する必要があるので、いつの日か連絡が来る
+> なので、このライブラリを採用する場合は、作者に確認する必要があるので、いつの日か連絡が来る。
 > 全部書くのが面倒くさいから1行で済むSPDX identifierが便利ですよっていう
 
 C:
@@ -254,18 +253,19 @@ A:
 
 B:
 > // SPDX-License-Identifier: GPL-2.0-only
-> これだけ
+>
+> これだけ。
 > 例はこれ [linux/cache.c at master · torvalds/linux](https://github.com/torvalds/linux/blob/master/fs/9p/cache.c)
 
 D:
 > たぶんこれが package.json だけだとライセンス違反が怖いので、マシンリーダブルなライセンス定義を書いてくれって言われると、それくらいなら…とガードを下げそう
 
 A:
-> そうかtrove classifierのLICENSEカテゴリどうなるんだろな
+> そうかtrove classifierのLICENSEカテゴリどうなるんだろな。
 > _spdx expression便利やな
 
 D:
-> 大企業とか部品表っていうキーワードで身構えちゃいそうだなあ、ぐらい
+> 大企業とか部品表っていうキーワードで身構えちゃいそうだなあ、ぐらい。
 > ちなみに cpython はファイル単位でのライセンス表記はやめてるっぽいすよ
 > [cpython/typing.py at main · python/cpython](https://github.com/python/cpython/blob/main/Lib/typing.py)
 
@@ -286,17 +286,17 @@ C:
 > よっしゃ
 
 C:
-> onlyってのが引っかかるな
+> onlyってのが引っかかるな。
 > どうせ1行で簡単に書けるなら
 
 B:
 > どれを選ぶかは
 > https://spdx.org/licenses/
-> これを参照です
+> これを参照です。
 > あ、Aさんが張ってたか
 
 A:
-> GPL-2.0-Onlyは3.0を含まないっていう感じのidentifier なので Apache 2.0ならそのままのはず
+> GPL-2.0-Onlyは3.0を含まないっていう感じのidentifier なので Apache 2.0ならそのままのはず。
 > [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) だな
 
 B:
@@ -309,7 +309,7 @@ B:
 > そうです
 
 A:
-> 各種のエコシステムから変換できるようなOWLを定義すべきなのかなこれ
+> 各種のエコシステムから変換できるようなOWLを定義すべきなのかなこれ。
 > あでもそもそも既存のエコシステムのパッケージングメタデータがトリプルが取れるように形式化されているかどうかからか
 
 B:
@@ -319,14 +319,57 @@ A:
 > んでも意味論はあるわけっしょ
 
 B:
-> [spdx-spec/spdx-schema.json at master · spdx/spdx-spec](https://github.com/spdx/spdx-spec/blob/master/schemas/spdx-schema.json)
-> [spdx-spec/spdx-ontology.owl.xml at master · spdx/spdx-spec](https://github.com/spdx/spdx-spec/blob/master/ontology/spdx-ontology.owl.xml)
-> この辺ですかね
+> - [spdx-spec/spdx-schema.json at master · spdx/spdx-spec](https://github.com/spdx/spdx-spec/blob/master/schemas/spdx-schema.json)
+> - [spdx-spec/spdx-ontology.owl.xml at master · spdx/spdx-spec](https://github.com/spdx/spdx-spec/blob/master/ontology/spdx-ontology.owl.xml)
+>
+> この辺ですかね。
 > ちなみに日本企業の尽力の結果(多分)、ExcelでもOKですよ
 
 E:
 > Excel！
 
 B:
-> [Japan-WG-General/License-Info-Exchange/SPDX-Lite-sample at master · OpenChain-Project/Japan-WG-General](https://github.com/OpenChain-Project/Japan-WG-General/tree/master/License-Info-Exchange/SPDX-Lite-sample)
-> [Japan-WG-General/SPDX-Lite-sample_ffmpeg.xlsx at master · OpenChain-Project/Japan-WG-General](https://github.com/OpenChain-Project/Japan-WG-General/blob/master/License-Info-Exchange/SPDX-Lite-sample/ffmpeg/SPDX-Lite-sample_ffmpeg.xlsx)
+> - [Japan-WG-General/License-Info-Exchange/SPDX-Lite-sample at master · OpenChain-Project/Japan-WG-General](https://github.com/OpenChain-Project/Japan-WG-General/tree/master/License-Info-Exchange/SPDX-Lite-sample)
+> - [Japan-WG-General/SPDX-Lite-sample_ffmpeg.xlsx at master · OpenChain-Project/Japan-WG-General](https://github.com/OpenChain-Project/Japan-WG-General/blob/master/License-Info-Exchange/SPDX-Lite-sample/ffmpeg/SPDX-Lite-sample_ffmpeg.xlsx)
+
+
+D:
+> [GitHub - opensbom-generator/spdx-sbom-generator: Support CI generation of SBOMs via golang tooling](https://github.com/opensbom-generator/spdx-sbom-generator)
+> 軽くspdx調べてて出てきたツール。ローカルのgo.modを見て何やらファイルをずらっと出してくれたのだけど、これを同梱するのが開発者の責務になるのかな？
+> 出てきたファイルの妥当性とかよくわからんのだけど
+
+> 自分のソフトウェアのライセンスとか著作名を入力するところがなくて、出てきたファイルのSBOMとしての意義がどれだけあるのかわからん。依存情報はずらっと出てくるが
+
+B:
+> そうそう、その手のツールは結構あります。
+> 同梱することが取引上求められる場合が今後ある
+
+> [oss-review-toolkit/ort: A suite of tools to assist with reviewing Open Source Software dependencies.](https://github.com/oss-review-toolkit/ort)
+
+> OpenChainのメンバーがメンテしているのだとこちらのツールが色々やってくれます
+
+> この運動の一番の問題は、内容の妥当性なんですよね。
+
+> https://clearlydefined.io/?sort=releaseDate&sortDesc=true
+> こういうDB作ったりしているけど、ここに記載していることは真実でしょうか？
+> という辺りを解消するすべが今のところない
+
+> SPDX出してくれて、解析もしてくれるもので一番古株は
+> [FOSSology](https://www.fossology.org/)
+> このFossology
+
+> 自動解析に加えて、手動での監査もサポートしてくれて、証跡とかも残せる感じなので、法務の立場的にはうれしいつくりになっているらしいです
+> でも、いかにも自動化からは遠い
+
+> あれ、ORTはSPDX出力対応してたとおもったけどないな...。
+> あぁあった勘違い。大丈夫そう。
+
+> このSBOMについてはSPDXファイルをどうやって作るかは1つの問題としてはあるんですが、最近のプログラミング言語のエコシステム側で依存関係なり、バージョンの情報なりは取得する手段はかなり充実してきて半自動なり全自動の生成は可能そうなので比較的簡単な問題です。
+> 難しいのは、記載内容をどうやって信頼するか？というところです。ここに対する解決策が今全く存在していない。
+
+> どっかで妥協するか、審査する仕組みを作るのか？
+> 後者を作るのは難しいというか馬鹿げている、すると前者の妥協をみんなで見つける必要があるわけですが、企業の規模や真剣度合いで全然違う。
+
+> エンジニアの立場としては自動化しようっていう話をすることになるから、法律的な監査する側からするとそんなの承認できない。
+しかし、数が多すぎるから自動化しないといけない。
+> なのでライセンス監査事務所みたいなのを国内で作って承認済みOSSリストみたいなのを作って販売すると儲かる

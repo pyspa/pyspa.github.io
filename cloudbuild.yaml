@@ -1,6 +1,0 @@
-steps:
-  - name: klakegg/hugo:ext-debian
-    env: ['HUGO_DESTINATION=/workspace/public']
-    args: ['-b', $_BASE_URL]
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['deploy', '--project=${_PROJECT}']

@@ -7,7 +7,3 @@ The repository for pyspa dev blog posts.
 ## setup local build
 
 install hugo-extended
-
-## setup or update tools for cloud build
-
-> gcloud builds submit --config tools/cloudbuild.yaml

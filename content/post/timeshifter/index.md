@@ -13,7 +13,7 @@ featured: false
 draft: false
 ---
 
-こんにちは、睡眠スヤスヤとり太郎です。[pyspa Advent Calendar 2023](https://adventar.org/calendars/8595)の16日目の記事として書かせて頂いています。
+こんにちは、睡眠スヤスヤとり太郎です。[pyspa Advent Calendar 2023](https://adventar.org/calendars/8595)の15日目の記事として書かせて頂いています。
 昨日の記事は、feizさんの[近況について](https://sizu.me/feiz/posts/ww639homhe66)です。
 
 時は2023年も末...様々なオフラインイベントが開催されるようになってきており、人によっては海外出張に行く機会も

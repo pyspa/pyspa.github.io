@@ -52,8 +52,6 @@ It's time to replace the myths with real jet lag science
  <img src="./timeshifter_jetlag_plan.png" width="200px">
 <!-- ![生成されたプラン例](./timeshifter_jetlag_plan.png) -->
 
-## Timeshiter Jet Lag を使ってみた
-
 このプラン通りに活動すると...！主観ですが、時差ボケが大分軽くなります。とはいえ、移動後1-2日の出発地点の深夜などは眠くなったりもしましたが...これは睡眠不足によるものかと思います。睡眠スヤスヤとり太郎失格と言えるでしょう。
 
 ## Timeshiter Jet Lag が考慮してくれないもの
@@ -64,7 +62,7 @@ It's time to replace the myths with real jet lag science
 
 2023年になり、渡航に有用だと思った tips をまとめておきます:
 
-- eSIM サービスを用いた安価な通信手段の確保: 5年前は海外渡航の際、現地における通信のために現地SIMを事前購入していたかと思います。現在はeSIM搭載端末が普及しているため、[airalo](https://www.airalo.com/)のようなeSIMを安く私用できるサービスを使うと出費を減らせます。
+- eSIM サービスを用いた安価な通信手段の確保: 5年前は海外渡航の際、現地における通信のために現地SIMを事前購入していたかと思います。現在はeSIM搭載端末が普及しているため、[airalo](https://www.airalo.com/)のようなeSIMを低価格で利用できるサービスを使うと出費を減らせます。
 - [MASTER キートン](https://www.shogakukan.co.jp/books/volume/27944?sort=old)を読むことによる、危機管理能力の向上: 本書の主人公キートン先生が海外渡航したときの拉致され率は非常に高く、トラブル時があったときにどのように対処すべきかという想像力が喚起されます。例えば、本書を読むことで、飛行機着陸時に「もしかしたら胴体着陸するかもしれない！」というアイデアが想起され、足を保護するために毎回あぐら体勢にしたくなるでしょう。
 - [Breaking Down オーディション](https://www.youtube.com/watch?v=NqPuOmaj_eo)を閲覧することによる、危機管理能力の向上: 滞在場所にかかわらず、いつ何時も暴力は向こうからやってきます。Breaking down 10 オーディション中には、[サップ西成選手に対しつかかったSATORU 選手に大阪陣営が殴りかかり、大変な乱闘騒ぎになっていました](https://www.youtube.com/watch?v=3-Mm0nOP4BI?t=1920)。我々ができること...それは逃げることです。何かあったときに即座に逃げることができるように、いつでも Breaking Down のオーディションを見て脳内シミュレーションをし、反応できるようにしておきましょう。
 

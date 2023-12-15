@@ -1,6 +1,4 @@
 steps:
-  - name: gcr.io/cloud-builders/git
-    args: ['clone', '--recurse-submodules', '--depth', '1', 'https://github.com/wowchemy/wowchemy-hugo-modules.git', 'themes/wowchemy']
   - name: klakegg/hugo:ext-debian
     env: ['HUGO_DESTINATION=/workspace/public']
     args: ['-b', $_BASE_URL]
